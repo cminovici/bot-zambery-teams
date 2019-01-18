@@ -112,7 +112,7 @@ class AmberyMenu
                         if (date('Y-m-d') == $meniuDate->format('Y-m-d')) {
                             try {
                                 $return['type'] = 'message';
-                                $return['text'] = '(puke) ' . $post->message;
+                                $return['text'] = $post->message;
                                 echo json_encode($return);
                             } catch (Exception $e) {
                                 $return['type'] = 'message';
